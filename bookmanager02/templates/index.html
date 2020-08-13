@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="#">{{ username }}</a>
+<hr>
+我的年龄是{{ age }}
+<hr>
+我的朋友有{{ friends }}
+<hr>
+{% for item in friends  %}
+    <li>{{ forloop.counter }} {{ item }}</li>
+{% endfor %}
+
+<hr>
+我的girl朋友是{{ friends.2 }}
+<hr>
+我的第一年月薪是{{ money.2019 }}
+<hr>
+我的生日是{{ birthday|date:'Y年 m月 d日'}}
+</body>
+</html>
